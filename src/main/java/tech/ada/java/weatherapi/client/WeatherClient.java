@@ -27,13 +27,10 @@ public class WeatherClient {
 
     public WeatherDto getWeatherForCity(String city) {
 
-        System.out.println("--------------entrou no método---------------------------");
-        System.out.println("--------------API_KEY---------------------------" + API_KEY);
         OpenWeatherDto openWeatherDto = callGetMethod("weather?q={city}&appid={apiKey}&units=metric&lang=en",
                 OpenWeatherDto.class,
                 city, "6776bd6419905f77aafdc09f7ae75024");
 
-//        System.out.println(actualWeatherDto.getCityName());
         int weatherId = openWeatherDto.getWeather().get(0).getId();
         String weatherIcon = weatherIcons.get(weatherId);
 
