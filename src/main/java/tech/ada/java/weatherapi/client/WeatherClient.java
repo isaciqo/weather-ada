@@ -14,7 +14,7 @@ public class WeatherClient {
 
     private final Map<Integer, String> weatherIcons;
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    RestTemplate restTemplate = new RestTemplate();
 
     private static final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/";
 
@@ -26,10 +26,14 @@ public class WeatherClient {
     }
 
     public WeatherDto getWeatherForCity(String city) {
+
+        System.out.println("--------------entrou no método---------------------------");
+        System.out.println("--------------API_KEY---------------------------" + API_KEY);
         OpenWeatherDto openWeatherDto = callGetMethod("weather?q={city}&appid={apiKey}&units=metric&lang=en",
                 OpenWeatherDto.class,
-                city, API_KEY);
+                city, "6776bd6419905f77aafdc09f7ae75024");
 
+//        System.out.println(actualWeatherDto.getCityName());
         int weatherId = openWeatherDto.getWeather().get(0).getId();
         String weatherIcon = weatherIcons.get(weatherId);
 
