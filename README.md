@@ -41,7 +41,7 @@ Dependencies
 
 Tests
 
-    ![tests](https://github.com/isaciqo/weather-ada/assets/134326998/bbf7343e-0fd3-430f-93b8-bb544f588e12)
+![tests](https://github.com/isaciqo/weather-ada/assets/134326998/18d67ad9-69cd-456f-9a74-0ece6fc02ec9)
 
 
    
