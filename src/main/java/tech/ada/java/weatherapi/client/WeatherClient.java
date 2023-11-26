@@ -4,8 +4,8 @@ package tech.ada.java.weatherapi.client;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import tech.ada.java.weatherapi.dto.WeatherDto;
 import tech.ada.java.weatherapi.dto.OpenWeatherDto;
+import tech.ada.java.weatherapi.dto.WeatherDto;
 
 import java.util.Map;
 
@@ -14,7 +14,7 @@ public class WeatherClient {
 
     private final Map<Integer, String> weatherIcons;
 
-    private RestTemplate restTemplate = new RestTemplate();
+    RestTemplate restTemplate = new RestTemplate();
 
     private static final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/";
 
@@ -26,6 +26,7 @@ public class WeatherClient {
     }
 
     public WeatherDto getWeatherForCity(String city) {
+
         OpenWeatherDto openWeatherDto = callGetMethod("weather?q={city}&appid={apiKey}&units=metric&lang=en",
                 OpenWeatherDto.class,
                 city, API_KEY);
