@@ -1,15 +1,16 @@
-Java Spring Weather App
+Java Spring Weather App:
+![weather_img](https://github.com/isaciqo/weather-ada/assets/134326998/36ce3c66-4013-425a-8022-369515cab0d6)
 
-Overview
+Overview:
 
 This is a Java Spring application that provides weather information using the OpenWeatherMap API. The application allows users to retrieve weather details for a specific city.
-Features
 
+Features:
     Weather Information: Get detailed weather information, including temperature, humidity, pressure, wind speed, and weather conditions.
     
     User Interface: Access the weather information through a web interface.
 
-How to Run
+How to Run:
 
     Clone the repository to your local machine.
 
@@ -27,11 +28,7 @@ How to Run
 
     Access the application by navigating to http://localhost:8080 in your web browser.
 
-Configuration
-
-    API Key: Obtain your OpenWeatherMap API key by signing up on OpenWeatherMap.
-
-Dependencies
+Dependencies:
 
     Spring Boot: Simplifies the development of Spring applications.
     
@@ -39,7 +36,7 @@ Dependencies
     
     Lombok: Reduces boilerplate code in Java.
 
-Tests
+Tests:
 
 ![tests](https://github.com/isaciqo/weather-ada/assets/134326998/18d67ad9-69cd-456f-9a74-0ece6fc02ec9)
 
